@@ -254,22 +254,244 @@ html, body {
                                             text-align: center;
                                             font-size: 1.4rem;
                                         }
-                                    }    
-
-                                    
+                                    }      
                                  }
-                                    
-
-
-                            }  
-                            
+                            }     
                         }
-
-
-
-            
             }
-
             }   
     }
 }
+
+/*webview da aba Portifololios */
+.webview {
+    .portifolios{
+        width: 100%;
+        min-height: 100vh;
+        .container{
+          padding: 10px;
+          
+            /* inicio do p-title */
+            .p-title{
+              width: 100%;
+              text-align: center;
+              margin-top: 20px;
+              margin-bottom: 30px;  
+
+                h2{
+                    @include config.font-subtitle;
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                    color: config.$color-green;
+                }
+            }
+           /* fim do p-title */ 
+          
+           /* inicio do p-projetos */ 
+           .p-projetos{
+                width: 100%;
+
+                .projeto{
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: 100%;
+                    grid-template-rows: repeat(3,auto);
+                    row-gap: 10px;
+
+                    .photos{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 4px;
+
+                         /* inicio da tag classe img */   
+                        .img{
+                            width: 100%;
+                            height: 100%;
+                            position: relative;
+
+                            /* inserindo o Hover nas imagens quando passa o mouse */      
+                                &:hover {
+                                    .descricao{
+                                        position: absolute;
+                                        display: flex;
+                                        width: 100%;
+                                        height: 50px;
+                                        background-color: config.$color-green;
+                                        bottom: 0;
+                                        left: 0;
+                                        z-index: 9999;
+                                        p{
+                                            display: block;
+                                            color: config.$color-white;
+                                        }
+                                    }   
+                                }
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    background-size:cover;
+                                    background-repeat: no-repeat;
+                                    background-position: center;        
+                                    } 
+                        }
+                         /* final da tag classe img */
+
+
+                         /* inicio da tag classe Descricao */
+                         .descricao{
+                            display: none;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            min-height: 50px;
+
+                            p{
+                                display: none;
+                                @include config.font-paragraf;
+                                color: config.$color-white;
+                            }
+                         }
+                    }   
+                }
+           } 
+
+        }
+    }
+
+
+}
+
+ /* inicio da AREA CONTATO*/
+.webview{
+
+    .contato{
+      width: 100%;
+      margin-bottom: 30px;
+      
+      .container{
+        padding: 10px;
+
+
+                .title{
+                  width: 100%;
+                  text-align: center;
+                  margin-top: 20px;
+                  margin-bottom: 30px;      
+                   
+                    h2{
+                        @include config.font-subtitle;
+                        font-size: 1.6rem;
+                        font-weight: bold;
+                        color: config.$color-green;
+                    }
+                }
+
+        /* inicio da tag Fomrulario*/
+        .formulario{
+             width: 100%;
+             
+                form{
+                width: 100%;
+                
+                    .form-group{
+                        width: 100%;
+
+                            .controls{
+                             width: 100%;
+                             min-height: 70px;
+                             
+                               label{
+                                @include config.font-paragraf;
+                                font-weight: bold;
+                                color: config.$color-green;
+                               }
+                               input{
+                                @include config.font-paragraf;
+                                height: 30px;
+                                width: 100%;
+                                padding: 10px;
+                                border: 1px solid config.$color-green;
+                                
+                                /* criacao do evento quando o campo tiver selecionado*/
+                                &:active{
+                                    border: 1px solid config.$color-green;
+                                    border-radius: 2px;
+                                    }  
+                                    &:focus{
+                                        border: 1px solid config.$color-green;
+                                        border-radius: 2px;
+                                            }        
+                               }
+                               textarea{
+                                width: 100%;
+                                height: 180px;
+                                padding: 10px;
+                                border: 1px solid config.$color-green;
+                                outline: none;
+
+
+
+                                /* criacao do evento quando o campo tiver selecionado*/
+                                &:active{
+                                    border: 1px solid config.$color-green;
+                                    border-radius: 2px;
+                                    }  
+                                    &:focus{
+                                        border: 1px solid config.$color-green;
+                                        border-radius: 2px;
+                                            }        
+                            } 
+                            }
+                             /* criacao do botao enviar estilizacao*/
+                            
+                             
+                             .btn-form-send{
+                                @include config.font-paragraf;
+                                margin-top: 20px;
+                                width: 140px;
+                                height: 40px;
+                                border: none;
+                                background-color: config.$color-green;
+                                color: config.$color-white;
+                                border-radius: 2px;
+
+                                &:hover{
+                                    background-color: config.$color-green;
+                                    }
+                                    &:active{
+                                        background-color: config.$color-green;
+                                        }
+
+                             }
+                    }
+                }
+            
+            }
+
+      }
+
+    }
+}
+
+
+ /* inicio da AREA rodape*/
+ .webview{
+ 
+      footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        background-color: config.$color-green;
+        
+            span{
+            @include config.font-paragraf;
+            color: config.$color-white;        
+            }
+    }  
+}
+

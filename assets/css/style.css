@@ -233,4 +233,198 @@ html, body {
   font-size: 1.4rem;
 }
 
+/*webview da aba Portifololios */
+.webview .portifolios {
+  width: 100%;
+  min-height: 100vh;
+}
+.webview .portifolios .container {
+  padding: 10px;
+  /* inicio do p-title */
+  /* fim do p-title */
+  /* inicio do p-projetos */
+}
+.webview .portifolios .container .p-title {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.webview .portifolios .container .p-title h2 {
+  font-family: "Ruda", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #29AE81;
+}
+.webview .portifolios .container .p-projetos {
+  width: 100%;
+}
+.webview .portifolios .container .p-projetos .projeto {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 10px;
+}
+.webview .portifolios .container .p-projetos .projeto .photos {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  /* inicio da tag classe img */
+  /* final da tag classe img */
+  /* inicio da tag classe Descricao */
+}
+.webview .portifolios .container .p-projetos .projeto .photos .img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /* inserindo o Hover nas imagens quando passa o mouse */
+}
+.webview .portifolios .container .p-projetos .projeto .photos .img:hover .descricao {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  background-color: #29AE81;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+}
+.webview .portifolios .container .p-projetos .projeto .photos .img:hover .descricao p {
+  display: block;
+  color: #FFFFFF;
+}
+.webview .portifolios .container .p-projetos .projeto .photos .img img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.webview .portifolios .container .p-projetos .projeto .photos .descricao {
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 50px;
+}
+.webview .portifolios .container .p-projetos .projeto .photos .descricao p {
+  display: none;
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+/* inicio da AREA CONTATO*/
+.webview .contato {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.webview .contato .container {
+  padding: 10px;
+  /* inicio da tag Fomrulario*/
+}
+.webview .contato .container .title {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.webview .contato .container .title h2 {
+  font-family: "Ruda", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #29AE81;
+}
+.webview .contato .container .formulario {
+  width: 100%;
+}
+.webview .contato .container .formulario form {
+  width: 100%;
+}
+.webview .contato .container .formulario form .form-group {
+  width: 100%;
+  /* criacao do botao enviar estilizacao*/
+}
+.webview .contato .container .formulario form .form-group .controls {
+  width: 100%;
+  min-height: 70px;
+}
+.webview .contato .container .formulario form .form-group .controls label {
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  font-weight: bold;
+  color: #29AE81;
+}
+.webview .contato .container .formulario form .form-group .controls input {
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  height: 30px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #29AE81;
+  /* criacao do evento quando o campo tiver selecionado*/
+}
+.webview .contato .container .formulario form .form-group .controls input:active {
+  border: 1px solid #29AE81;
+  border-radius: 2px;
+}
+.webview .contato .container .formulario form .form-group .controls input:focus {
+  border: 1px solid #29AE81;
+  border-radius: 2px;
+}
+.webview .contato .container .formulario form .form-group .controls textarea {
+  width: 100%;
+  height: 180px;
+  padding: 10px;
+  border: 1px solid #29AE81;
+  outline: none;
+  /* criacao do evento quando o campo tiver selecionado*/
+}
+.webview .contato .container .formulario form .form-group .controls textarea:active {
+  border: 1px solid #29AE81;
+  border-radius: 2px;
+}
+.webview .contato .container .formulario form .form-group .controls textarea:focus {
+  border: 1px solid #29AE81;
+  border-radius: 2px;
+}
+.webview .contato .container .formulario form .form-group .btn-form-send {
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  margin-top: 20px;
+  width: 140px;
+  height: 40px;
+  border: none;
+  background-color: #29AE81;
+  color: #FFFFFF;
+  border-radius: 2px;
+}
+.webview .contato .container .formulario form .form-group .btn-form-send:hover {
+  background-color: #29AE81;
+}
+.webview .contato .container .formulario form .form-group .btn-form-send:active {
+  background-color: #29AE81;
+}
+
+/* inicio da AREA rodape*/
+.webview footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: #29AE81;
+}
+.webview footer span {
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
 /*# sourceMappingURL=style.css.map */
