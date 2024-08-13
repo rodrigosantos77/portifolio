@@ -8,7 +8,11 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;700;800&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-XXXXXX" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+<!-- carousel css -->
+    <link rel="stylesheet" href="./assets/css/Owl_carousel2/owl.carousel.min.css">
+<link rel="stylesheet" href="./assets/css/Owl_carousel2/owl.theme.default.min.css">
 
 </head>
 <body>
@@ -102,14 +106,14 @@
                         </div>
                         <div class="s-carrousel">
                             <div class="s-carrousel-container">
-                                <div class="owl-carrousel owl-theme">
+                                <div class="owl-carousel owl-theme owl-loaded"> <!-- modificacao da classe "carrousel" para "carousel"-->
                                         <div class="item s-carrousel-item">
                                             <div class="title">
                                                 <p>01</p>
                                             </div>
                                             <div class="body">
                                                 <div class="icon">
-                                                    <span> </span>
+                                                    <span><i class="fa-solid fa-desktop"></i></span>
                                                 </div>
                                                 <div class="texto">
                                                     <p>UI e UX</p>
@@ -261,7 +265,7 @@
 
                             <div class="controls">
                                 <label for="Whatsapp">Whatsapp:</label>
-                                <input type="text" name="Whatsapp" id="Whatsapp" required>
+                                <input type="text" name="Whatsapp" id="whatsapp" required>  <!-- modificado letras maiusculas do W-->
                             </div>
                         </div>
                        
@@ -289,6 +293,13 @@
     </body>
 
      <!-- JQuery version 3.7.1 local-->   
-    <script src="./assets/js/jquery-3.7.1.slim.js"></script>
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js"integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+      <!-- JQuery-Mask - local-->   
+    <script src="./assets/js/Jquery_Mask/jquery.mask.min.js"></script>
+    <script src="./assets/js/custom/mask-form.js"></script>
+
+          <!-- Owl-carousel-->    
+          <script src="./assets/js/Owl_carousel2/owl.carousel.min.js"></script>
+          <script src="./assets/js/Owl_carousel2/owl.start.function.js"></script>
 
 </html>
