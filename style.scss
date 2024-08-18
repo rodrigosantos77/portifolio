@@ -160,7 +160,7 @@ html, body {
     }
 }
 
-/* Area Sobre Formatacao */
+/* Area serviços Formatacao */
 
 .webview{
 
@@ -320,7 +320,7 @@ html, body {
                                         bottom: 0;
                                         left: 0;
                                         z-index: 9999;
-                                        p{
+                                        p {
                                             display: block;
                                             color: config.$color-white;
                                         }
@@ -347,7 +347,7 @@ html, body {
                             width: 100%;
                             min-height: 50px;
 
-                            p{
+                            p {
                                 display: none;
                                 @include config.font-paragraf;
                                 color: config.$color-white;
@@ -380,7 +380,7 @@ html, body {
                   margin-top: 20px;
                   margin-bottom: 30px;      
                    
-                    h2{
+                    h2 {
                         @include config.font-subtitle;
                         font-size: 1.6rem;
                         font-weight: bold;
@@ -488,10 +488,138 @@ html, body {
         height: 50px;
         background-color: config.$color-green;
         
-            span{
+            span {
             @include config.font-paragraf;
             color: config.$color-white;        
             }
     }  
 }
+
+      
+@media only screen and (min-width: config.$media-mobile-l){
+    /*formataacao incial da pagina */
+    .webview{
+        .intro{
+
+            .container{
+                h1{
+                    font-size: 2.4rem;
+                }
+                p{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    /*formataacao da area sobre*/
+    .webview{
+        .container{
+               .row{
+                display: grid;
+                grid-template-columns: repeat(2, 50%);
+
+                   .c-photo{
+                    padding: 10px;
+                   }
+                   .c-descricao{
+                    padding: 10px;
+
+                    p{
+                      font-size: 1.2rem;  
+                    }
+
+                    .habildades{
+                            .h-item{
+                                .h-title{
+                                    h3{
+                                       font-size: 1.2rem; 
+                                    }
+                                }
+
+                                .h-c-porcentagem{
+                                    
+                                    .h-porcentagem-geral{
+
+                                        span{
+                                            font-size: 1.2rem;
+                                        }
+                                    }
+                                }
+                            }  
+                    }
+                   } 
+               }   
+        }
+    }
+
+
+     /*formataacao da area serviços*/
+     .webview{
+
+        .container{
+            
+            .s-carrousel{
+                margin-bottom: 40px;
+                height: 400px;
+            }
+        }
+     }
+     
+     
+     /*formataacao da area portifolios*/
+     .webview{
+
+        .container{
+
+            .p-title{
+              margin-top: 30px;
+              margin-bottom: 30px;  
+
+            }
+            .projetos{
+
+                    .projeto{
+                        grid-template-columns: repeat(2, 1fr);
+                        grid-template-rows: repeat(2, 1fr);
+                        row-gap: 10px;
+                        column-gap: 10px;
+
+                            .photos{
+                               height: 100%;
+                               
+                                img{
+                                    position: relative;
+
+                                      &:hover{
+
+                                           .descricao{
+                                            position: absolute;
+                                            display: flex;
+                                            width: 100%;
+                                            height: 50px;
+                                            background-color: config.$color-green;
+                                            bottom: 0;
+                                            left: 0;
+                                            z-index: 9999;
+
+                                                p{
+                                                  display: block;
+                                                  color: config.$color-white;       
+                                                } 
+
+
+                                           } 
+                                      }   
+                                }
+
+                            }
+                    }
+            }
+        }
+
+
+     }
+     
+}
+    
 
