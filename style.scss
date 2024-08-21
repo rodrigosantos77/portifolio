@@ -513,6 +513,7 @@ html, body {
     }
     /*formataacao da area sobre*/
     .webview{
+        .sobre{ 
         .container{
                .row{
                 display: grid;
@@ -549,12 +550,14 @@ html, body {
                     }
                    } 
                }   
-        }
+        } /*final container sobre */
+    }
     }
 
 
      /*formataacao da area serviços*/
-     .webview{
+     .webview{ 
+        .servicos{
 
         .container{
             
@@ -563,20 +566,21 @@ html, body {
                 height: 400px;
             }
         }
+    }
+
      }
      
      
      /*formataacao da area portifolios*/
      .webview{
-
+        .portifolios{
         .container{
 
             .p-title{
               margin-top: 30px;
               margin-bottom: 30px;  
-
             }
-            .projetos{
+            .p-projetos{
 
                     .projeto{
                         grid-template-columns: repeat(2, 1fr);
@@ -606,8 +610,6 @@ html, body {
                                                   display: block;
                                                   color: config.$color-white;       
                                                 } 
-
-
                                            } 
                                       }   
                                 }
@@ -615,9 +617,9 @@ html, body {
                             }
                     }
             }
-        }
+        }  /*final container portifolios  */
 
-
+    }
      }
      
 }

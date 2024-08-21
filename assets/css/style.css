@@ -436,48 +436,54 @@ html, body {
     font-size: 1.2rem;
   }
   /*formataacao da area sobre*/
-  .webview .container .row {
+  .webview .sobre {
+    /*final container sobre */
+  }
+  .webview .sobre .container .row {
     display: grid;
     grid-template-columns: repeat(2, 50%);
   }
-  .webview .container .row .c-photo {
+  .webview .sobre .container .row .c-photo {
     padding: 10px;
   }
-  .webview .container .row .c-descricao {
+  .webview .sobre .container .row .c-descricao {
     padding: 10px;
   }
-  .webview .container .row .c-descricao p {
+  .webview .sobre .container .row .c-descricao p {
     font-size: 1.2rem;
   }
-  .webview .container .row .c-descricao .habildades .h-item .h-title h3 {
+  .webview .sobre .container .row .c-descricao .habildades .h-item .h-title h3 {
     font-size: 1.2rem;
   }
-  .webview .container .row .c-descricao .habildades .h-item .h-c-porcentagem .h-porcentagem-geral span {
+  .webview .sobre .container .row .c-descricao .habildades .h-item .h-c-porcentagem .h-porcentagem-geral span {
     font-size: 1.2rem;
   }
   /*formataacao da area serviços*/
-  .webview .container .s-carrousel {
+  .webview .servicos .container .s-carrousel {
     margin-bottom: 40px;
     height: 400px;
   }
   /*formataacao da area portifolios*/
-  .webview .container .p-title {
+  .webview .portifolios {
+    /*final container portifolios  */
+  }
+  .webview .portifolios .container .p-title {
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  .webview .container .projetos .projeto {
+  .webview .portifolios .container .p-projetos .projeto {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     row-gap: 10px;
     column-gap: 10px;
   }
-  .webview .container .projetos .projeto .photos {
+  .webview .portifolios .container .p-projetos .projeto .photos {
     height: 100%;
   }
-  .webview .container .projetos .projeto .photos img {
+  .webview .portifolios .container .p-projetos .projeto .photos img {
     position: relative;
   }
-  .webview .container .projetos .projeto .photos img:hover .descricao {
+  .webview .portifolios .container .p-projetos .projeto .photos img:hover .descricao {
     position: absolute;
     display: flex;
     width: 100%;
@@ -487,7 +493,7 @@ html, body {
     left: 0;
     z-index: 9999;
   }
-  .webview .container .projetos .projeto .photos img:hover .descricao p {
+  .webview .portifolios .container .p-projetos .projeto .photos img:hover .descricao p {
     display: block;
     color: #FFFFFF;
   }
