@@ -464,9 +464,6 @@ html, body {
     height: 400px;
   }
   /*formataacao da area portifolios*/
-  .webview .portifolios {
-    /*final container portifolios  */
-  }
   .webview .portifolios .container .p-title {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -496,6 +493,19 @@ html, body {
   .webview .portifolios .container .p-projetos .projeto .photos img:hover .descricao p {
     display: block;
     color: #FFFFFF;
+  }
+  /*final portifolios*/
+  /*incio da area contato*/
+  .webview .contato .container .title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .webview .contato .container .formulario form .form-group {
+    display: flex;
+    flex-direction: row;
+  }
+  .webview .contato .container .formulario form .controls {
+    padding: 5px;
   }
 }
 

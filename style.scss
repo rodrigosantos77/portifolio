@@ -581,7 +581,6 @@ html, body {
               margin-bottom: 30px;  
             }
             .p-projetos{
-
                     .projeto{
                         grid-template-columns: repeat(2, 1fr);
                         grid-template-rows: repeat(2, 1fr);
@@ -617,11 +616,42 @@ html, body {
                             }
                     }
             }
-        }  /*final container portifolios  */
+        }  
 
     }
      }
-     
+     /*final portifolios*/
+
+     /*incio da area contato*/
+
+     .webview{
+
+        .contato{
+
+            .container{
+                    
+                .title{
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                }
+                .formulario{
+
+                        form{
+
+                            .form-group{
+                                display: flex;
+                                flex-direction: row;
+                            }
+
+                            .controls{
+                                padding: 5px;
+                            }
+
+                        }
+                }   
+            }
+     }
+    }
 }
     
 
