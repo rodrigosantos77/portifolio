@@ -652,6 +652,220 @@ html, body {
             }
      }
     }
-}
-    
 
+/*final contato*/
+}
+
+/*final de etapa mobile ate 428px*/    
+
+
+/* INICIO DA ETAPA RESPONSIVA DE TAMNHO DE TELA DESKTOP ate 728px*/
+@media only screen and (min-height: config.$media-desktop ) {
+
+    .webview{
+
+        .intro{
+
+            .container{
+
+                h1{
+                    font-size: 3rem;
+                }
+
+                p{
+                  font-size: 1.6rem;  
+                }
+
+                .m-auto-btn {
+                    margin-top: 10px;
+
+                        .btn-portifolio {
+                            @include config.font-paragraf;
+                            width: 180px;
+                            height: 40px;
+
+                            &:hover {
+
+                                background-color: config.$color-green;
+                                border-radius: 6px;
+                                border: 1px solid config.$color-green;
+                            }
+                        }
+                }   
+            }
+        }  
+    }
+
+     /*incio da area Sobre*/
+    .webview{
+
+         .sobre{
+
+            .container{
+                width: 90%;
+                margin: auto;
+
+                    .title{
+                        margin-top: 40px;
+                        margin-bottom: 40px;
+                        
+                        h2 {
+                           font-size: 2rem; 
+                        }
+                    }
+
+                    .row{
+                       display: grid;
+                       grid-template-columns:  40% 60%;
+                       margin-bottom: 40px;
+
+
+                        .c-photo{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            padding: 10px;
+                            
+                            img{
+                            width: 100%;
+                            max-width: 400px;  
+                            } 
+                        }
+
+                        .c-descricao{
+                            padding: 10px;
+                            margin-top: 0px;
+
+
+                            p{
+                                font-size: 1.2rem;
+                                margin-bottom: 25px;
+                            }
+                            
+                            .habildades{
+                               
+                                .h-item{
+
+                                    .h-title{
+                                        width: 100%;
+
+                                        h3{
+                                            font-size: 1.2rem;
+                                        }
+
+                                    }
+
+                                    .h-c-porcentagem{
+
+                                        .h-porcentagem-geral{
+
+                                            span{
+                                                font-size: 1.2rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+            }
+         }   
+    }
+
+
+
+     /*incio da area serviços*/
+     .webview{ 
+
+        .servicos{
+
+            .container{
+                width: 90%;
+                margin: auto;
+
+
+                .s-title{
+                    margin-top: 40px;
+                    margin-bottom: 40px;
+
+                    h2{
+                      font-size: 2rem;  
+                    }
+                }
+
+                .s-carrousel{
+                    width: 96%;
+                    margin: auto;
+                    margin-bottom: 40px;
+                }
+            }
+        }     
+     }
+
+      /*incio da area portifolio*/
+      .webview{
+
+        .portifolios{
+
+            .container{
+                width: 90%;
+                margin: auto;
+
+
+                .p-title{
+
+                    h2{
+                        font-size: 2rem;
+                    }
+                }
+                
+                .p-projetos{
+                    padding: 10px;
+
+                     .projeto{
+                        grid-template-columns: repeat(3, auto);
+                        grid-template-rows: 1fr;
+                        grid-auto-rows: 1fr;
+
+
+                            .photos{
+                                height: 100%;
+
+                                .img{
+                                    position: relative;
+
+                                    &:hover {
+
+                                        .descricao{
+                                            position: absolute;
+                                            display: flex;
+                                            width: 100%;
+                                            height: 50px;
+                                            background-color: config.$color-green;
+                                            bottom: 0;
+                                            left: 0;
+                                            z-index: 9999;
+
+                                            p {
+                                               display: block;
+                                               color: config.$color-white; 
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                     }   
+                }
+            }
+        }
+      }
+
+
+
+      /*incio da areaContato*/
+      .webview{ 
+
+
+      }
+
+}   

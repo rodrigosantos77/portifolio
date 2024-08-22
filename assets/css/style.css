@@ -507,6 +507,129 @@ html, body {
   .webview .contato .container .formulario form .controls {
     padding: 5px;
   }
+  /*final contato*/
+}
+/*final de etapa mobile ate 428px*/
+/* INICIO DA ETAPA RESPONSIVA DE TAMNHO DE TELA DESKTOP ate 728px*/
+@media only screen and (min-height: 1024px) {
+  .webview .intro .container h1 {
+    font-size: 3rem;
+  }
+  .webview .intro .container p {
+    font-size: 1.6rem;
+  }
+  .webview .intro .container .m-auto-btn {
+    margin-top: 10px;
+  }
+  .webview .intro .container .m-auto-btn .btn-portifolio {
+    font-family: "Ruda", sans-serif;
+    font-weight: 400;
+    width: 180px;
+    height: 40px;
+  }
+  .webview .intro .container .m-auto-btn .btn-portifolio:hover {
+    background-color: #29AE81;
+    border-radius: 6px;
+    border: 1px solid #29AE81;
+  }
+  /*incio da area Sobre*/
+  .webview .sobre .container {
+    width: 90%;
+    margin: auto;
+  }
+  .webview .sobre .container .title {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .webview .sobre .container .title h2 {
+    font-size: 2rem;
+  }
+  .webview .sobre .container .row {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-bottom: 40px;
+  }
+  .webview .sobre .container .row .c-photo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+  }
+  .webview .sobre .container .row .c-photo img {
+    width: 100%;
+    max-width: 400px;
+  }
+  .webview .sobre .container .row .c-descricao {
+    padding: 10px;
+    margin-top: 0px;
+  }
+  .webview .sobre .container .row .c-descricao p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+  }
+  .webview .sobre .container .row .c-descricao .habildades .h-item .h-title {
+    width: 100%;
+  }
+  .webview .sobre .container .row .c-descricao .habildades .h-item .h-title h3 {
+    font-size: 1.2rem;
+  }
+  .webview .sobre .container .row .c-descricao .habildades .h-item .h-c-porcentagem .h-porcentagem-geral span {
+    font-size: 1.2rem;
+  }
+  /*incio da area serviços*/
+  .webview .servicos .container {
+    width: 90%;
+    margin: auto;
+  }
+  .webview .servicos .container .s-title {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .webview .servicos .container .s-title h2 {
+    font-size: 2rem;
+  }
+  .webview .servicos .container .s-carrousel {
+    width: 96%;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  /*incio da area portifolio*/
+  .webview .portifolios .container {
+    width: 90%;
+    margin: auto;
+  }
+  .webview .portifolios .container .p-title h2 {
+    font-size: 2rem;
+  }
+  .webview .portifolios .container .p-projetos {
+    padding: 10px;
+  }
+  .webview .portifolios .container .p-projetos .projeto {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 1fr;
+    grid-auto-rows: 1fr;
+  }
+  .webview .portifolios .container .p-projetos .projeto .photos {
+    height: 100%;
+  }
+  .webview .portifolios .container .p-projetos .projeto .photos .img {
+    position: relative;
+  }
+  .webview .portifolios .container .p-projetos .projeto .photos .img:hover .descricao {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: #29AE81;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+  }
+  .webview .portifolios .container .p-projetos .projeto .photos .img:hover .descricao p {
+    display: block;
+    color: #FFFFFF;
+  }
+  /*incio da areaContato*/
 }
 
 /*# sourceMappingURL=style.css.map */
