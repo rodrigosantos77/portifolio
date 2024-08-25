@@ -630,6 +630,28 @@ html, body {
     color: #FFFFFF;
   }
   /*incio da areaContato*/
+  .webview .contato {
+    margin-bottom: 50px;
+  }
+  .webview .contato .container {
+    width: 90%;
+    margin: auto;
+  }
+  .webview .contato .container .title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .webview .contato .container .title h2 {
+    font-size: 2rem;
+  }
+  .webview .contato .formulario .form-group {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+  .webview .contato .formulario .form-group .controls {
+    padding: 5px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

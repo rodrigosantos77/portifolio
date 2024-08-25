@@ -864,8 +864,34 @@ html, body {
 
       /*incio da areaContato*/
       .webview{ 
+            .contato{
+                margin-bottom: 50px;
 
 
+                .container{
+                    width: 90%;
+                    margin: auto;
+
+                    .title{
+                        margin-top: 30px;
+                        margin-bottom: 30px;
+                        h2 {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+                .formulario{
+
+                    .form-group{
+                        display: flex;
+                        flex-direction: row;
+                        margin-bottom: 10px;
+
+                        .controls{
+                            padding: 5px;
+                        }
+                    }  
+                }
+            }
       }
-
 }   
