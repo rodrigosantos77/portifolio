@@ -726,5 +726,39 @@ html, body {
     padding: 5px;
   }
 }
+/* botao whatsapp*/
+.webview .container-whatsapp {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  padding: 10px;
+  min-width: 40px;
+  max-height: 40px;
+  z-index: 9999;
+}
+.webview .container-whatsapp .btn-whatsapp {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #29AE81;
+}
+.webview .container-whatsapp .btn-whatsapp i {
+  font-size: 2rem;
+  color: #FFFFFF;
+}
+.webview .container-whatsapp .btn-whatsapp:hover {
+  background-color: #1E8865;
+  border: 2px solid #FFFFFF;
+}
 
 /*# sourceMappingURL=style.css.map */
